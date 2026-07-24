@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeCanvas - Personal Productivity Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+
+    <header>
+
+        <h1>🌿 LifeCanvas</h1>
+
+        <p>Your Personal Productivity Dashboard</p>
+
+        <button id="themeBtn">
+            🌙 Dark Mode
+        </button>
+
+    </header>
+
+    <!-- Date and Time -->
+
+    <section class="clock-section">
+
+        <h2 id="time">00:00:00</h2>
+
+        <p id="date">Loading Date...</p>
+
+    </section>
+
+    <!-- Progress -->
+
+    <section class="progress-card">
+
+        <h2>Today's Progress</h2>
+
+        <div class="progress-bar">
+
+            <div id="progressFill"></div>
+
+        </div>
+
+        <p id="progressText">
+            0% Completed
+        </p>
+
+    </section>
+
+    <!-- To Do -->
+
+    <section class="todo-card">
+
+        <h2>Today's Tasks</h2>
+
+        <div class="task-input">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter a new task..."
+            >
+
+            <button id="addTask">
+                Add
+            </button>
+
+        </div>
+
+        <ul id="taskList">
+
+        </ul>
+
+    </section>
+
+    <!-- Daily Goals -->
+
+    <section class="goal-card">
+
+        <h2>Daily Goals</h2>
+
+        <textarea
+            id="goalBox"
+            placeholder="Write today's goals..."
+        ></textarea>
+
+    </section>
+
+    <!-- Notes -->
+
+    <section class="notes-card">
+
+        <h2>Quick Notes</h2>
+
+        <textarea
+            id="notesBox"
+            placeholder="Write your notes..."
+        ></textarea>
+
+    </section>
+
+    <!-- Quote -->
+
+    <section class="quote-card">
+
+        <h2>Motivation</h2>
+
+        <blockquote id="quote">
+
+            "Small progress every day leads to big results."
+
+        </blockquote>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
